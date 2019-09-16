@@ -1,0 +1,35 @@
+#menu-item{
+    color: whitesmoke;
+    /*border: 1px #46a573 solid;*/
+    transition: all .5s;
+    margin: 0 1rem;
+}
+
+#menu-item:hover, #menu-item.active{
+    background-color: #46a573;
+    color: whitesmoke;
+    border: 1px #ffffff00 solid;
+ 
+}
+
+#menu-item > a{
+    color: #46a573;
+}
+
+#menu-item:hover > a, #menu-item.active > a{
+    color: whitesmoke;
+}
+
+.navbar-toggler-icon {
+    color: #65b889;
+}
+
+.navbar {
+    padding-top: 24px;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-brand{
+    color: #fff;
+}

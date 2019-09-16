@@ -1,0 +1,165 @@
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-right: 1.75rem;
+  margin-left: 1.75rem;
+}
+
+footer > div:nth-child(1) .social-media {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+footer > div:nth-child(1) .social-media h1 {
+  align-self: center;
+}
+
+footer > div:nth-child(1) .social-media div {
+  flex-direction: row;
+}
+footer > div:nth-child(1) .social-media div button {
+  margin: .75rem;
+}
+footer > div:nth-child(1) .contact, footer > div:nth-child(1) .quick-links {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-links div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+}
+
+.social-media-buttons button {
+  border-radius: 50px;
+  color: #fff;
+}
+
+.facebook {
+  background-color: #3C5A99;
+  border-color: #3C5A99;
+}
+
+.twitter {
+  background-color: #38A1F3;
+  border-color: #38A1F3;
+}
+
+.instagram {
+  background-color: #231F20;
+  border-color: #231F20;
+}
+
+.linkedin {
+  background-color: #0077B5;
+  border-color: #0077B5;
+}
+
+.contact {
+  margin-left: 2.75rem;
+}
+
+.contact span {
+  display: flex;
+}
+
+.contact span p {
+  margin-left: .75rem;
+}
+
+.contact h1, .social-media h1, .quick-links h1 {
+  font-size: 150%;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+}
+
+
+@media (max-width: 425px)  {
+  .contact {
+    margin-left: 0.75rem;
+  }
+  .contact h1, .social-media h1, .quick-links h1 {
+    font-size: 100%;
+  }
+  .contact span {
+    font-size: 80%;
+  }
+
+  footer > div:nth-child(1) .social-media div {
+    font-size: 60%;
+  }
+
+  footer > div:nth-child(1) .social-media div button {
+    margin: .20rem;
+  }
+
+  .quick-links div {
+    height: 50%;
+    /* font-size: 30%; */
+  }
+
+  .quick-links div h5{
+    font-size: 100%;
+  }
+
+  footer > div:nth-child(1) {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+}
+
+@media (max-width: 375px)  {
+  .contact {
+    margin-left: 0.35rem;
+  }
+
+  .contact span p {
+    margin-left: .29rem;
+  }
+  footer > div:nth-child(1) .social-media div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer > div:nth-child(1) .social-media div button {
+    margin: .20rem;
+    font-size: 50%;
+  }
+
+  .contact h1, .social-media h1, .quick-links h1 {
+    font-size: 100%;
+  }
+
+  .contact h1, .social-media h1, .quick-links h1 {
+    text-align: center;
+    font-size: 56%;
+  }
+
+  /* .contact span {
+    display: flex;
+    justify-content: center;
+  } */
+
+  .quick-links div h5 {
+    font-size: 70%;
+  }
+
+  .contact span {
+    font-size: 60%;
+  }
+
+}

@@ -1,0 +1,118 @@
+<div class='welcome-background'></div>
+<header id="welcome" (scroll) = "TilesPosition($event)">
+  <div>
+    <h1> Midas Mining</h1>
+    <p>We are suppliers and traders of industrial solid minerals used in making tiles and also processed for
+      exports. These minerals are mined in Nigeria all over the country and easy to locate. The solid minerals
+      that we trade in currently are Ball clay, Feldspar Stone, Talc stone, Kaolin and silica.
+      </p>
+    <button class="btn btn-lg action-button">Contact us</button>
+  </div>
+  <div class="summary-card">
+    
+  </div>
+</header>
+<section class="summary-section">
+      <mat-card>
+        <div>
+        <fa-icon class="fa-5x" [icon]="faIndustry"></fa-icon>
+      </div>
+        
+      <mat-divider></mat-divider>
+        <mat-card-header>
+          <mat-card-title>industrial Minerals</mat-card-title>
+        </mat-card-header>
+      </mat-card>     
+    <mat-card> 
+        <div>
+  <fa-icon class="fa-5x" [icon]="faGem"></fa-icon>
+  </div>
+  <mat-divider></mat-divider>
+        <mat-card-header>
+    <mat-card-title>Special Stones</mat-card-title>
+  </mat-card-header>
+  </mat-card>
+    <mat-card> 
+        <div>  
+      <fa-icon class="fa-5x" [icon]="faHardHat"></fa-icon>
+      </div>  
+      <mat-divider></mat-divider>
+        <mat-card-header>
+        <mat-card-title>Construction Materials</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+</section>
+<section class="about-section">
+  <h2>ABOUT US</h2>
+  <hr/>
+  <article>
+    Midas Mining is a registered company in the Nigeria Solid Minerals sector. We have been operating in this sphere for more than 3 years and have partnered with lots of companies and other mining companies like ours within the industry. Our team works efficiently to make end products available to our various partners in and around the country. We explore, mine and also transport these materials to designated sites. Our work processes are well designed to reduce stress without its effect on production and trasnportation.
+  </article>
+</section>
+<section class="services-section">
+  <h2>Our Services</h2>
+  <hr />
+  <app-moving-tile [services] ="services"></app-moving-tile>
+</section>
+<section class="contactus-section">
+    <div class="contactus-image"></div>
+    <mat-card>
+        <mat-card-title>
+    <h2>Contact US</h2>
+        </mat-card-title>
+    <hr/>
+  <form class="">
+      <mat-card-content>
+    <div class="full-name">
+      <div class="full-name-label">
+        <fa-icon [icon]="faUser"></fa-icon>        
+        <label>Your name</label>
+      </div>
+      <div class="full-name-field">
+        <mat-form-field>
+          <input matInput placeholder="First Name">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last Name">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="email-adddress">
+        <div class="email-adddress-label">
+          <fa-icon [icon]="faAt"></fa-icon>        
+          <label>Your Email Address</label>
+        </div>
+        
+      <div class="email-adddress-field">
+      <mat-form-field>
+        <input matInput placeholder="Email Address">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="email-adddress">
+      <div class="email-adddress-label">
+          <fa-icon [icon]="faCommentDots"></fa-icon>        
+          <label>Your Topic</label>
+        </div>
+        <div class="email-adddress-field">
+            <mat-form-field>
+      <input matInput placeholder="Subject">
+    </mat-form-field>
+  </div>
+</div>
+  <div class="email-adddress">
+  <div class="email-adddress-label">
+      <fa-icon [icon]="faEnvelopeOpen"></fa-icon>        
+      <label>Your Message</label>
+    </div>
+    <div class="email-adddress-field">
+    <mat-form-field>
+      <textarea matInput placeholder="Message"></textarea>
+    </mat-form-field>
+    </div>
+  </div>
+</mat-card-content>
+  </form>
+  </mat-card>
+</section>
+

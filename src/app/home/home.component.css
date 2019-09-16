@@ -1,0 +1,528 @@
+.welcome-background{ 
+    position: absolute;
+    background:linear-gradient(56deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 69%,rgba(160, 160, 160, 0.05) 69%, rgba(160, 160, 160, 0.05) 100%),linear-gradient(194deg, rgba(102, 102, 102, 0.02) 0%, rgba(102, 102, 102, 0.02) 60%,rgba(67, 67, 67, 0.02) 60%, rgba(67, 67, 67, 0.02) 100%),linear-gradient(76deg, rgba(169, 169, 169, 0.06) 0%, rgba(169, 169, 169, 0.06) 89%,rgba(189, 189, 189, 0.06) 89%, rgba(189, 189, 189, 0.06) 100%),linear-gradient(326deg, rgba(213, 213, 213, 0.04) 0%, rgba(213, 213, 213, 0.04) 45%,rgba(66, 66, 66, 0.04) 45%, rgba(66, 66, 66, 0.04) 100%),linear-gradient(183deg, rgba(223, 223, 223, 0.01) 0%, rgba(223, 223, 223, 0.01) 82%,rgba(28, 28, 28, 0.01) 82%, rgba(28, 28, 28, 0.01) 100%),linear-gradient(3deg, rgba(20, 20, 20, 0.06) 0%, rgba(20, 20, 20, 0.06) 62%,rgba(136, 136, 136, 0.06) 62%, rgba(136, 136, 136, 0.06) 100%),linear-gradient(200deg, rgba(206, 206, 206, 0.09) 0%, rgba(206, 206, 206, 0.09) 58%,rgba(6, 6, 6, 0.09) 58%, rgba(6, 6, 6, 0.09) 100%),linear-gradient(304deg, rgba(162, 162, 162, 0.07) 0%, rgba(162, 162, 162, 0.07) 27%,rgba(24, 24, 24, 0.07) 27%, rgba(24, 24, 24, 0.07) 100%),linear-gradient(186deg, rgba(166, 166, 166, 0.04) 0%, rgba(166, 166, 166, 0.04) 5%,rgba(210, 210, 210, 0.04) 5%, rgba(210, 210, 210, 0.04) 100%),linear-gradient(90deg, rgb(26, 118, 64),rgb(32, 207, 121),rgb(78, 196, 128));
+    clip-path: polygon(0 0, 74% 0, 55% 100%, 0% 100%);
+    height:700px;
+    width: 100%;
+    z-index: -1;
+}
+
+#welcome {
+    color: whitesmoke;
+    padding:  1rem 3.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#welcome > div {
+    /* align-self: flex-start; */
+    margin-top:50px;
+}
+
+#welcome h1{
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 54px;
+    text-shadow: 0 4px 4px rgba(0,0,0,.22);
+    margin-right: auto;
+}
+
+#welcome > div:nth-child(1) p {
+    /* font-weight: 900; */
+    text-shadow: 0 4px 4px rgba(0,0,0,.22);
+    width: 500px;
+    font-size: 120%;
+    margin: 40px 0;
+    margin-right: auto;
+    line-height: 25px;
+}
+
+.action-button{
+    border: 1px #46a573 solid;
+    color: #46a573;
+    transition: all .5s;
+    background: whitesmoke;
+    margin-right: auto;
+}
+
+.action-button:hover{
+    background: #46a573;
+    border: 1px whitesmoke solid;
+    color: whitesmoke;
+}
+
+.summary-section{
+    display: flex;
+    align-items: center;
+    background: #212121;
+    padding: 1rem 3.75rem;
+    height: 350px;
+    justify-content: space-around;
+}
+
+.summary-section mat-card{
+    width: 300px;
+}
+
+.summary-section mat-card mat-card-header{
+    justify-content: center;
+}
+
+.summary-section mat-card fa-icon {
+    margin: auto;
+}
+
+.summary-section mat-card div{
+    display: flex;
+}
+
+.summary-section > mat-list > mat-list-item p {
+    text-shadow: none;
+    margin: auto 0;
+}
+
+.about-section {
+    padding:  1rem 3.75rem;
+    background: linear-gradient(#0f100fe3, #0f100fe3),  url('../../assets/Images/pit-4428560_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.summary-card{
+    background:url('../../assets/Images/digger-1453430_640.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:300px;
+    margin-left: 30px;
+    width: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-radius: 20px;
+}
+
+.about-section h2 {
+    font-size: 200%;
+    font-weight: 900;
+    line-height: 54px;
+    /* text-shadow: 0 4px 4px rgba(0,0,0,.22); */
+}
+
+.about-section h2, .about-section hr {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.about-section hr{
+    width: 25%;
+    background: whitesmoke;
+}
+
+.about-section article{
+    font-size:120%;
+    color: whitesmoke;
+    text-shadow: 0 4px 4px rgba(0,0,0,.22);
+}
+
+.services-section{
+    padding: 1rem 3.75rem;
+}
+
+.services-section h2, .services-section hr {
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 200%;
+    font-weight: 900;
+    line-height: 54px;
+    /* text-shadow: 0 4px 4px rgba(0,0,0,.22); */
+    color: #46a573;
+}
+.services-section hr{
+    width: 25%;
+    background-color: #46a573;
+}
+
+.contactus-section {
+    padding:  1rem 3.75rem;
+    display: flex;
+    position: relative;
+}
+
+.contactus-section .contactus-image {
+    background: linear-gradient(#0f100fe3, #0f100fe3), url(../../assets/Images/mining-440743_640.jpg);
+    position: absolute;
+    height: 530px;
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    clip-path: circle(83.5% at 34% 95%);
+}
+
+.contactus-section mat-card{
+    margin: 1rem auto;
+}
+
+.contactus-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactus-section form .full-name::before, .contactus-section form .email-adddress::before {
+    content: "";
+    border-left: 1px dotted;
+    height: 55px;
+    position: absolute;
+    margin-top: 1.75rem;
+    margin-left: .85rem;
+
+}
+
+.contactus-section form .email-adddress:last-child::before {
+    border: 0;
+}
+
+.contactus-section form .full-name, .contactus-section form .email-adddress {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactus-section form .full-name-label, .contactus-section form .email-adddress-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactus-section form .full-name-label fa-icon, .contactus-section form .email-adddress-label fa-icon {
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 0.1rem;
+    width: 26.19px;
+    text-align: center;
+}
+
+.contactus-section form .full-name-label label, .contactus-section form .email-adddress-label label{
+    margin: auto 0;
+    margin-left: 1rem;
+}
+
+.contactus-section form .full-name-field, .contactus-section form .email-adddress-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.contactus-section form .full-name-field mat-form-field, .contactus-section form .email-adddress mat-form-field {
+    width: 50%;
+    margin: 0 .75rem;
+}
+
+.contactus-section form .email-adddress mat-form-field {
+    width: 100%;
+}
+
+.contactus-section h2, .services-section hr {
+    text-align: center;
+}
+
+.contactus-section h2 {
+    font-size: 120%;
+    font-weight: 900;
+    line-height: 54px;
+    /* text-shadow: 0 4px 4px rgba(0,0,0,.22); */
+    color: #46a573;
+}
+
+.contactus-section hr{
+    width: 25%;
+    background-color: #46a573;
+}
+
+.contactus-section form .input-div{
+    position: relative;
+}
+
+.input-div label {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+.input-div input, .input-div textarea{
+    border: 0;
+    border-bottom: 1px solid #7d807e;
+    outline: none;
+   transition: border-bottom .5s ease-in-out;
+}
+
+.input-div input:focus, .input-div textarea:focus{
+    border-bottom: 2px solid #46a573;
+}
+@media (max-width: 768px)  {
+    .welcome-background{ 
+        -webkit-clip-path: polygon(100% 0, 100% 55%, 64% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 55%, 64% 100%, 0 100%, 0 0);
+        height: 500px;
+    }
+    #welcome {
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+    #welcome {
+        height: 500px;
+    }
+
+    #welcome h1 {
+        font-size: 48px;
+    }
+
+    #welcome > div:nth-child(1) p {
+        font-size: 90%;
+        width: 100%;
+    }
+
+    .summary-card{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px !important;
+        margin-right: 0;
+    }
+    .summary-section mat-card{
+        width: 200px;
+    }
+    .summary-section mat-card mat-card-title{
+        font-size: 85%;
+    }
+
+    .summary-section mat-card fa-icon {
+        font-size: 300%;
+    }
+    
+    .about-section{
+        padding: 1rem 1.75rem;
+        height: 300px;
+    }
+
+    .about-section article{
+        font-size:100%;
+    }
+
+    .contactus-section mat-card{
+        width:100%;
+    }
+}
+@media (max-width: 576px)  { 
+    .welcome-background{ 
+        -webkit-clip-path: polygon(100% 0, 100% 55%, 64% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 55%, 64% 100%, 0 100%, 0 0);
+    }
+    #welcome {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.75rem;
+    }
+
+    #welcome h1 {
+        font-size: 163%;
+    }
+    
+    #welcome > div:nth-child(1) p{
+        margin: 12px 0;
+    }
+
+    .summary-section {
+        padding: 1rem 1.75rem;
+        height: 200px;
+    }
+
+    .summary-section mat-card {
+        width: 164px;
+    }
+    .summary-section mat-card fa-icon {
+        font-size: 250%;
+    }
+
+    .summary-section mat-card mat-card-title {
+        font-size: 55%;
+    }
+
+    .about-section{
+        padding: 1rem 1.75rem;
+        height: 350px;
+    }
+
+    .about-section h2{
+        font-size: 120%;
+        line-height: 50%;
+    }
+
+    .about-section article{
+        font-size:90%;
+        text-align: justify;
+    }
+    .services-section {
+        padding: 1rem 1.75rem;
+    }
+}
+@media (max-width: 425px)  {
+    #welcome {
+        padding: 1.75rem 1.75rem;
+        /* height: 50%; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #welcome h1{
+        font-size: 150%;
+    }
+
+    #welcome p{
+        text-align: justify;
+        font-size: 70%;
+        line-height: 18px;
+        margin: 20px 0;
+    }
+
+    #welcome > div:nth-child(2) {
+        margin-right: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .action-button {
+        font-size: 60%;
+    }
+
+    .summary-section{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .summary-section mat-card{
+        margin-bottom: 1rem;
+        width: 200px;
+    }
+
+    .summary-section mat-card fa-icon {
+        font-size: 300%;
+    }
+
+    .summary-section mat-card mat-card-title {
+        font-size: 85%;
+    }
+
+    .about-section{
+        padding: 1rem 1.75rem;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .about-section hr{
+        margin: .75rem auto;
+    }
+
+    .about-section h2{
+        font-size: 150%;
+        line-height: 50%;
+    }
+
+    .about-section article{
+        font-size: 100%;   
+        line-height: 110%;
+        text-align: justify;
+    }
+
+    .services-section{
+        padding: 1rem 1.75rem;
+    }
+    .services-section hr{
+        margin: .75rem auto;
+    }
+
+    .services-section h2{
+        font-size: 150%;
+        line-height: 50%;
+    }
+    .contactus-section {
+        padding: 1rem 1.75rem;
+    }
+    .contactus-section h2 {
+        font-size: 150%;
+        line-height: 50%;
+    }
+
+    .contactus-section .contactus-image{
+        height: 500px;
+    }
+}
+@media (max-width: 375px)  {
+    #welcome {
+        padding: 1.75rem 1.75rem;
+        height: 50%;
+    }
+    
+    #welcome h1{
+        font-size: 150%;
+        font-weight: 900;
+        line-height: 54px;
+    }
+
+    .action-button {
+        font-size: 60%;
+    }
+
+    .about-section{
+        padding: 1rem 1.75rem;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+    .about-section hr{
+        margin: .75rem auto;
+    }
+
+    .about-section h2{
+        font-size: 100%;
+        line-height: 50%;
+    }
+
+    .about-section article{
+        font-size: 70%;   
+        line-height: 110%;
+        text-align: justify;
+    }
+
+    #welcome p{
+        font-size: 70%;
+        line-height: 150%;
+        margin-top: 10px;
+    }
+
+    .action-button {
+        font-size: 60%;
+    }
+
+    .services-section{
+        padding: 1rem 1.75rem;
+    }
+    .services-section hr{
+        margin: .75rem auto;
+    }
+
+    .services-section h2{
+        font-size: 100%;
+        line-height: 50%;
+    }
+}
+@media (max-width: 320px)  {
+    #welcome h1{
+        font-size: 123%;
+    }
+}
