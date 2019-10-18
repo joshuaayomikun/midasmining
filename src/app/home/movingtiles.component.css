@@ -10,7 +10,7 @@
 }
 div.child {
   flex-shrink: 0;
-  width: 360px;
+  width: 300px;
   height: auto;
   transition: transform .4s, box-shadow .3s;
   margin: 1rem;
@@ -36,12 +36,12 @@ div.child > div:nth-child(2){
 
 div.child > div > div {
   margin-top: .25rem;
-  width: 360px;
-  height: 360px;
+  width: 300px;
+  height: 200px;
 }
 div.child > div > div img {
-  width: 360px;
-  height: 360px;
+  width: 300px;
+  height: 200px;
   /* margin-left: -5px; */
 }
 /* 
@@ -146,11 +146,11 @@ div.child div button:hover{
   }
   div.child > div > div {
     width: 300px;
-    height: 300px;
+    height: 200px;
 }
   div.child > div > div img {
     width: 300px;
-    height: 300px;
+    height: 200px;
   }
 }
 @media (max-width: 575.98px)  { 
