@@ -96,7 +96,7 @@
     background:url('../../assets/Images/digger-1453430_640.jpg');
     background-repeat:no-repeat;
     background-size: cover;
-    height:300px;
+    height:500px;
     margin-left: 30px;
     width: 50%;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
@@ -161,7 +161,8 @@
     left: 0;
     right: 0;
     background-size: cover;
-    clip-path: circle(83.5% at 34% 95%);
+    -webkit-clip-path: ellipse(56% 82% at 51% 82%);
+clip-path: ellipse(56% 82% at 51% 82%);
 }
 
 .contactus-section mat-card{
